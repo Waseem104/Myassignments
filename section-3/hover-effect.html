@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover-effects</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            height: 50px;
+            width: 100%;
+            border: none;
+            background:radial-gradient(#fff,#95e87e);
+        }
+        nav ul li a{
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding: 012px 30px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li a:hover{
+            border: 1px solid blue;
+            color: black;
+            border-radius: 5px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color every third Item</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                height: auto;
+                width: 200px;
+                background-color: rgb(147, 147, 147);
+                border: 2px solid black;
+                margin: 20px 10px;
+            }
+            .container li:nth-child(3n){
+                color: blue;
+                background-color: rgb(194, 105, 105);
+            }
+            .container li{
+                padding: 10px;
+                border-bottom: 2px dotted black;
+                list-style-type: none;
+            }
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+    </ul>
+</body>
+</html>

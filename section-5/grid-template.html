@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid template</title>
+</head>
+<Style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+              "sidebar header header"
+              "sidebar  main main"
+              "footer footer footer";
+        grid-template-columns: 300px 1fr 1fr;
+        grid-template-rows: 1fr 1fr 100px;
+        height: 100vh;
+        /* gap: 20px; */
+    }
+    .header{
+        grid-area: header;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .header h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .sidebar{
+        grid-area: sidebar;
+        background-color: aquamarine;
+        border-right: 2px solid black;
+    }
+    .main{
+        grid-area: main;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: rgb(179, 178, 178);
+    }
+    .footer p{
+        margin-top: 30px;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+    }
+    nav ul li{
+        list-style-type: none;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+    nav ul li a{
+        text-decoration: none;
+        padding: 20px 20px;
+        font-size: 20px;
+    }
+    nav ul li:active{
+        background-color: rgb(11, 11, 237);
+    }
+    .header p,.main p{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    h2{
+        text-align: center;
+        font: 25px;
+    }
+    @media(max-width:800px){
+        .container{
+            grid-template-areas: 
+                "sidebar"
+                "header"
+                "main"
+                "footer";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+        }
+        .sidebar nav ul{
+           display: flex;
+           justify-content: center;
+        }
+    }
+</Style>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+        <nav>
+         <ul>
+             <li><a href="">Home</a></li>
+             <li><a href="#">Services</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Contact</a></li>
+             <li><a href="#">Login</a></li>
+         </ul>
+        </nav>
+     </aside>
+    <header class="header">
+       <h1>this is header part</h1>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed nulla, molestiae facilis itaque est tempora atque quae sapiente similique, blanditiis voluptatum aliquam repellat repellendus sit praesentium placeat veritatis harum laboriosam eaque, aspernatur nostrum magni culpa. Quos, sed quibusdam a culpa rerum perspiciatis inventore ipsam incidunt hic dolorem excepturi, dolor quas?</p>
+    </header>
+    <main class="main">
+        <h2 class="main-header">This is main section</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed nulla, molestiae facilis itaque est tempora atque quae sapiente similique, blanditiis voluptatum aliquam repellat repellendus sit praesentium placeat veritatis harum laboriosam eaque, aspernatur nostrum magni culpa. Quos, sed quibusdam a culpa rerum perspiciatis inventore ipsam incidunt hic dolorem excepturi, dolor quas?</p>
+    </main>
+    <footer class="footer">
+        <p>&copy All rights are reserved</p>
+    </footer>
+  </div>  
+</body>
+</html>

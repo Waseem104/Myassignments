@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth child even and odd</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 20px 10px;
+        }
+        th{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .container th, .container td{
+            padding: 15px;
+            border-bottom: 2px solid black;
+        }
+        .container tr:nth-child(odd){
+            background-color: aqua;
+        }
+        .container tr:nth-child(even){
+            background-color: rgb(159, 159, 195);
+        }
+        .container th{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table class="container">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>waseem</td>
+                <td>web developer</td>
+                <td>new york</td>
+            </tr>
+            <tr>
+                <td>chris</td>
+                <td>manager</td>
+                <td>london</td>
+            </tr>
+            <tr>
+                <td>robert</td>
+                <td>ai engineer</td>
+                <td>new york</td>
+            </tr>
+            <tr>
+                <td>black widow</td>
+                <td>fighter</td>
+                <td>france</td>
+            </tr>
+            <tr>
+                <td>doctor strange</td>
+                <td>magician</td>
+                <td>russia</td>
+            </tr>
+            <tr>
+                <td>thor</td>
+                <td>thunder man</td>
+                <td>los angelos</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

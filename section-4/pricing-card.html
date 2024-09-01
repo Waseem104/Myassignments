@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing-card</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman';
+        background: radial-gradient(#fff,#b3efef);
+        
+    }
+    .pricing-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+    }
+    .pricing-card{
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        flex-basis: 30%;
+        transition: transform 0.3s;
+        margin: 0 10px;
+    }
+    .pricing-card:hover{
+        transform: scale(1.1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    }
+    .features ul li{
+        list-style-type: none;
+        margin-bottom: 20px;
+        padding: 10px 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .pricing-card h2{
+        text-align: center;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .pricing-card p{
+        text-align: center;
+        font-size: 40px;
+        margin: 10px 0;
+    }
+    button{
+        width: 100%;
+        padding: 10px 50px;
+        background-color: rgb(116, 207, 199);   
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    button:hover{
+        background-color: rgb(3, 171, 171);
+    }
+    .title{
+        font-size: 50px;
+        text-align: center;
+        margin: 20px 0;
+    }
+</style>
+
+<body>
+    <h2 class="title">pricing card</h2>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h2>Silver</h2>
+            <p class="price">$9/month</p>
+            <div class="features">
+                <ul>
+                    <li>feature-1</li>
+                    <li>feature-2</li>
+                    <li>feature-3</li>
+                </ul>
+            </div>
+            <button type="submit">Login</button>
+        </div>
+        <div class="pricing-card">
+            <h2>Gold</h2>
+            <p class="price">$19/month</p>
+            <div class="features">
+                <ul>
+                    <li>feature-1</li>
+                    <li>feature-2</li>
+                    <li>feature-3</li>
+                </ul>
+            </div>
+            <button type="submit">Login</button>
+        </div>
+        <div class="pricing-card">
+            <h2>Diamond</h2>
+            <p class="price">$29/month</p>
+            <div class="features">
+                <ul>
+                    <li>feature-1</li>
+                    <li>feature-2</li>
+                    <li>feature-3</li>
+                </ul>
+            </div>
+            <button type="submit">Login</button>
+        </div>
+    </div>
+</body>
+
+</html>

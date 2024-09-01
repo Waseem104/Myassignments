@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: rgb(194, 62, 62);
+}
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+    padding:15px 0;
+}
+nav ul li{
+    padding: 0 20px;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #eadf6a;
+    font-size: 15px;
+    padding: 5px;
+}
+nav ul li a:hover{
+    color: antiquewhite;
+}
+.container-1{
+background: radial-gradient(#fff,#eadf6a);
+height: 800px;
+}
+.col-1{
+    margin-bottom: 20px;
+}
+.col-1 p{
+    text-align: justify;
+    border-left: 4px solid red;
+    padding-left: 5px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+.col-1 h2{
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+/* footer */
+.container-4{
+    height: 200px;
+    background-color: black;
+}
+.container-4 p{
+    color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.container-4 ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container-4 ul li{
+    padding: 0 30px;
+}
+.container-4 ul li a{
+    text-decoration: none;
+    color: #eadf6a;
+    font-size: 20px;
+}
+.container-4 ul li a:hover{
+    color: antiquewhite;
+}
+/* recipe-list */
+
+.recipe-container h3{
+    text-align: center;
+    color: blue;
+    margin: 20px 0;
+    font-size: 40px;
+}
+.recipe-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    margin: 20px 20px;
+}
+.recipe-items{
+    border: 2px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5;
+    padding: 30px;
+    border-radius: 5px;
+}
+.recipe-items:hover{
+    transform: translateY(-8px)
+}
+.recipe-items img{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+.recipe-items h2{
+    text-align: center;
+    padding-top: 10px;
+}
+.recipe-items p{
+    text-align: justify;
+    padding: 10px 10px;
+}
+.read-more{
+   text-decoration: none;
+   border: 2px solid black;
+   border-radius: 4px;
+   padding: 0 5px;
+}
+.read-more:hover{
+    background-color: #db5151;
+}
+/* instructions */
+.recipe-instruction{
+    background: radial-gradient(#fff, #eadf6a);
+}
+.recipe-instruction h2{
+    padding: 20px 0;
+    text-align: center;
+
+}
+.recipe-instruction img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.ingridents h3{
+    padding: 20px 20px;
+    font-size: 30px;
+}
+.ingridents ul{
+   margin-left: 20px;
+   border-left: 4px solid red;
+   padding: 10px 0 10px 30px;
+   line-height: 30px;
+   font-size: 20px;
+}
+.instructions h3{
+    padding: 20px 20px;
+    font-size: 30px;
+}
+.instructions ol{
+    margin-left: 20px;
+    border-left: 4px solid red;
+    padding: 10px 0 10px 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+/* conatct page */
+.contact-container{
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    font-size: 15px;
+    margin: 0 20px;
+    font-weight: bold;
+    color: #181717;
+}
+.contact-form input{
+    margin: 10px 0;
+    /* font-size: 15px; */
+    border-radius: 2px;
+    height: 30px;
+}
+.contact-form textarea{
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.contact-btn{
+background-color: aqua;
+cursor: pointer;
+border-radius: 5px;
+border: navajowhite;
+margin-top: 20px;
+padding: 10px 0;
+}
+.contact-btn:hover{
+    background-color: blue;
+}
+.contact-container h1{
+    text-align: center;
+    margin: 20px 0;
+}
+

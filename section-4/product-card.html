@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-caed</title>
+</head>
+<Style>
+       *{
+        margin: 0;
+        padding: 0;
+       }
+       body{
+        height: 100vh;
+        box-sizing: border-box;
+       }
+       .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .rows{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        width: 1000px;
+       }
+       .col-3{
+        display: flex;
+        flex-direction: column;
+        /* flex: 1 1 33%; */
+        padding: 20px 20px;
+        /* border: 2px solid black; */
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+        margin: 0 10px;
+        box-sizing: border-box;
+        transition: transform 0.5s;
+       }
+       .col-3:hover{
+        transform: scale(1.02);
+       }
+       .col-3 img{
+        width: 70%;
+        height: 300px;
+        display: block;
+        /* border: 2px solid black; */
+        margin: 0 auto
+       }
+       .col-3 h3{
+        margin-top: 10px;
+       }
+       .price{
+        font-weight: bold;
+        margin: 10px 0;
+       }
+       .col-3 p{
+        text-align: justify;
+       }
+
+</Style>
+<body>
+    <div class="container">
+    <div class="rows">
+        <div class="col-3">
+        <img src="linen.jpg" alt="shirt">
+        <h3>linen Shirt</h3>
+        <p class="price">$10</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab at voluptate facere provident minima saepe quo repellat ullam aliquid sunt.</p>
+    </div>
+    <div class="col-3">
+        <img src="shoe.jpg" alt="shoe">
+        <h3>linen Shirt</h3>
+        <p class="price">$10</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab at voluptate facere provident minima saepe quo repellat ullam aliquid sunt.</p>
+    </div>
+    <div class="col-3">
+        <img src="bracelet.jpg" alt="bracelet">
+        <h3>linen Shirt</h3>
+        <p class="price">$10</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab at voluptate facere provident minima saepe quo repellat ullam aliquid sunt.</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>

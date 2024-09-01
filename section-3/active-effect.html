@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active-pseudo class</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .sidebar{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 100%;
+            background-color: rgb(166, 165, 165);
+            border-right: 5px solid black;
+        }
+        a{
+            text-decoration: none;
+            padding:20px 20px;
+            display: block;
+            transition: background-color 0.3s;
+            border-bottom: 1px solid rgb(74, 74, 74);
+        }
+        a:active{
+            background-color: rgba(4, 4, 4, 0.4);
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Login</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Settings</a>
+    </div>
+</body>
+</html>

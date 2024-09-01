@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-wrap: wrap; */
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 1200px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .gallery-items {
+            flex: 1 1 calc(33.33% - 10px);
+        }
+
+        .gallery-items img {
+            width: 100%;
+            transition: translateY 0.3s; 
+            height: auto;
+        }
+        .gallery-items img:hover{
+            transform: translateY(-5px)
+        }
+        h2{
+            margin: 20px 0;
+            text-align: center;
+            font-size: 40px;
+            padding-bottom: 15px;
+            border-bottom: 5px solid red;
+        }
+        @media (max-width: 800px) {
+            .gallery-items{
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Gallery</h2>
+    <div class="main-container">
+        <div class="gallery-container">
+            <div class="gallery-items">
+                <img src="r1.jpg" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r2.webp" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r3.jpg" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r4.webp" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r5.jpg" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r6.jpg" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r7.webp" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r8.jpg" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r9.webp" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r10.webp" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r11.webp" alt="">
+            </div>
+            <div class="gallery-items">
+                <img src="r12.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

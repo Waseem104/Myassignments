@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            box-sizing: border-box;
+            height: 100vh;
+        }
+        .dashboard{
+            display: flex;
+
+        }
+        aside{
+            width: 500px;
+            background-color: rgb(229, 229, 229);
+        }
+        .content{
+            padding-left: 30px;
+            margin-top: 20px;
+        }
+        .content h1{
+            font-size: 50px;
+        }
+        .content p{
+           font-size: 18px;
+           margin-top: 20px;
+           margin-right: 40px;
+           text-align: justify;
+        }
+        nav ul {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: strat;
+           /* padding-left: 20px; */
+        }
+        nav ul li{
+            padding: 20px 10px;
+            list-style-type: none;
+            border-bottom: 1px solid black;
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        @media(max-width:800px){
+            .dashboard{
+                flex-direction: column;
+            }
+            nav ul{
+                flex-direction: row;
+            }
+            aside{
+              width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <h1>Introduction</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae natus enim in beatae quae quo qui? Dolores porro pariatur, ut commodi illum voluptatum repellat explicabo dignissimos culpa excepturi quas corporis qui rem voluptatem dolorem accusantium rerum corrupti ipsam odio dolore consectetur error harum non illo! Iure natus expedita porro vero. lorem100</p>
+        </main>
+    </div>
+</body>
+</html>
